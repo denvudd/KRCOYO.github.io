@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про нас - КРЦОЯО</title>
+  <link rel="stylesheet" href="css/aboutUs.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script type="text/javascript">
+    {
+      if (screen.width > 1028) {
+        document.write('<script type="text/javascript" src="js/searchBar.js"></sc' + 'ript>');
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="index.html"><img src="img/main/logo-header.png" alt="logo"></a>
+          </div>
+          <nav class="nav__header">
+            <ul class="menu-list">
+              <li><a href="index.html" class="menu__link">Головна</a></li>
+              <li><a href="aboutUs.html" class="menu__link active">Про нас</a></li>
+              <li>
+                <a href="exams.html" class="menu__link">Іспити
+                  <object class="menu__arrow" data="img/svg/arrow-down-sign-to-navigate.svg" type="image/svg+xml"></object>
+                </a>
+                <ul class="menu-sublist">
+                  <li><a href="zno.html" class="menu__sublink">ЗНО/ДПА</a></li>
+                  <li><a href="evi-evrf.html" class="menu__sublink">ЄВІ/ЄФВВ</a></li>
+                  <li><a href="pisa.html" class="menu__sublink">PISA</a></li>
+                  <li><a href="certification.html" class="menu__sublink">Сертифікація</a></li>
+                  <li><a href="registration_1.html" class="menu__sublink">Пробне ЗНО</a></li>
+                </ul>
+              </li>
+              <li><a href="questions.html" class="menu__link">Питання</a></li>
+              <li><a href="contacts.html" class="menu__link">Контакти</a></li>
+            </ul>
+          </nav>
+          <img src="img/svg/loupe1.svg" class="ion-ios-search-strong" id="search-icon"></img>
+        </div> <!-- /.header__inner -->
+        <div class="burger-menu">
+          <a href="#" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+            <ul class="burger-menu__nav">
+              <li><a href="index.html" class="burger__link">Головна</a></li>
+              <li><a href="aboutUs.html" class="burger__link">Про нас</a></li>
+              <li>
+                <a href="exams.html" class="burger__link">Іспити</a>
+                <ul>
+                  <li><a href="zno.html" class="burger__sublink">ЗНО/ДПА</a></li>
+                  <li><a href="evi-evrf.html" class="burger__sublink">ЄВІ/ЄФВВ</a></li>
+                  <li><a href="pisa.html" class="burger__sublink">PISA</a></li>
+                  <li><a href="certification.html" class="burger__sublink">Сертифікація</a></li>
+                  <li><a href="registration_1.html" class="burger__sublink">Пробне ЗНО</a></li>
+                </ul>
+              </li>
+              <li><a href="questions.html" class="burger__link">Питання</a></li>
+              <li><a href="contacts.html" class="burger__link">Контакти</a></li>
+              <form action="#" class="form__burger">
+                <input type="text" id="burger__search" name="s" placehplder="Введіть в пошук">
+                <button id="burger__search__button" type="submit" name="burger-search">Шукати</button>
+              </form>
+            </ul>
+          </a>
+          <div class="burger-menu__overlay"></div>
+        </div> <!-- /.burder-menu -->
+      </div> <!-- /.container -->
+      <div id="search-menu">
+            <div class="wrapper">
+              <form id="form" action="#" method="">
+                <input id="popup-search" type="text" name="u" placeholder="Введіть в пошук"/>
+                <button id="popup-search-button" type="submit" name="search">Шукати</button>
+              </form>
+            </div>
+          </div>
+    </header>
+
+    <section class="section1">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Про нас</h1>
+          </div>
+        </div>
+        <div class="section__text">
+          <p>Київський регіональний центр оцінювання якості освіти створений відповідно <a href="#"><span
+                class="blueWord">Наказів Українського центру оцінювання якості освіти</span></a> від 10.04.2006 №3 та
+            від
+            16.05.2006 №22/1.
+            Київський регіональний центр оцінювання якості освіти діє на підставі <a href="#"><span
+                class="blueWord">Положення</span></a> про Київський регіональний центр оцінювання якості освіти,
+            затвердженого директором Українського центру оцінювання якості освіти та погодженим міністром освіти і науки
+            України 07.12.2016.
+          </p>
+          <br>
+          <p>Регіональний центр у своїй діяльності керується <a href="#"><span class="blueWord">Конституцією
+                України</span></a>,
+            <a href="#"><span class="blueWord">законами</span></a> України, <a href="#"><span
+                class="blueWord">Указами</span></a>
+            Президента України, <a href="#"><span class="blueWord">Постановами</span></a> Кабінету Міністрів України,
+            <a href="#"><span class="blueWord">наказами</span></a> Міністерства освіти і науки, молоді та спорту
+            України,
+            <a href="#"><span class="blueWord">Положенням</span></a> про Український центр оцінювання якості освіти,
+            <a href="#"><span class="blueWord">рішеннями</span></a> наглядової ради Українського центру,
+            <a href="#"><span class="blueWord">наказами</span></a> Українського центру та
+            <a href="#"><span class="blueWord">Положенням</span></a> про Київський регіональний центр оцінювання якості
+            освіти.
+          </p>
+        </div> <!-- /.section1__text -->
+        <div class="section1__button">
+          <a href="#">Нормативна база</a>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section2">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Місця обслуговування</h1>
+          </div>
+        </div>
+        <div class="cities__wrapper">
+          <div class="cities__inner">
+            <div class="city">
+              <div class="city__photo">
+                <img src="img/aboutUs/city1.jpg" alt="City 1">
+              </div>
+              <div class="city__name">
+                <h2>Київ та Київська область:</h2>
+              </div>
+              <div class="city__text">
+                <p>Київ, Ірпінь, Бровари, Вишгород, Бориспіль, Буча, Фастів, Біла Церква, Васильків, Переяслав, Обухів,
+                  Миронівка, Ржищів, Березань, Вишневе, Боярка, Тараща, Славутич, Сквира, Богуяслав, Яготин, Українка,
+                  Тетіїв, Узин, Кагарлик, Ворзень, Чабани, Ставище, Гостомель, Глеваха, Баришівка, Макарів, Рокитне,
+                  Козин, Бородянка, Іванків, Згурівка, Володарка, Немішаєве, Димер, Борова, Кодра, Коцюбинське,
+                  Красятичі,
+                  Терезине, Кожанка, Пісківка, Калита, Клавдієво-Тарасове, Калинівка. </p>
+              </div>
+            </div> <!-- /.city -->
+            <div class="city">
+              <div class="city__photo">
+                <img src="img/aboutUs/city2.jpg" alt="City 2">
+              </div>
+              <div class="city__name">
+                <h2>Черкаська область:</h2>
+              </div>
+              <div class="city__text">
+                <p>Черкаси, Канів, Золотоноша, Сміла, Умань, Ватутіне, Чигирин, Городище, Шпола, Звенигородка,
+                  Корсунь-Шевченківський, Жашків, Тальне, Христинівка, Монастрище, Кам’янка, Лисянка, Катеринопіль,
+                  Бабанка, Маньківка, Чорнобай, Драбів, Вільшана, Цвіткове, Ірдинь, Верхнячка, Стеблів, Цибулів, Єрки,
+                  Шрамківська, Буки, Вільховець, Трахтемирів, Шевченкове, Мартинівка, Мельники, Тальянки, Майданецьке,
+                  Ротмістрівка, Пастирське, Межиріч, Маслове, Моринці, Кропивна, Гельмязів, Мліїв, Суботів, Бакаївка,
+                  Іркліїв, Вознесенське, Драбівці.</p>
+              </div>
+            </div> <!-- /.city -->
+            <div class="city">
+              <div class="city__photo">
+                <img src="img/aboutUs/city3.jpg" alt="City 3">
+              </div>
+              <div class="city__name">
+                <h2>Чернігівська область:</h2>
+              </div>
+              <div class="city__text">
+                <p>Чернігів, Ніжин, Прилуки, Новгород-Сіверський, Ічня, Мена, Городня, Сновськ, Бобровиця, Бахмач,
+                  Корюківка, Носівка, Семенівка, Борзна, Остер, Батурин, Козелець, Сосниця, Варва, Короп, Ріпки,
+                  Куликівка, Талаївка, Срібне, Олишівка, Любеч, Седнів, Линовиця, Дігтярі, Холми, Березна, Дмитрівка,
+                  Понорниця, Лосинівка, Ладан, Радуль, Макошине, Гончарівське, Парафіївка, Мала Дівиця,
+                  Михайло-Коцюбинське, Замглай, Десна, Чулатів, Араповичі, Миколаївська, Бужанка, Пушкарі, Качанівка,
+                  Дружба, Шестовиця.</p>
+              </div>
+            </div> <!-- /.city -->
+          </div> <!-- /.cities__inner -->
+        </div> <!-- /.cities__wrapper -->
+        <div class="cities__button">
+          <a href="#"><span class="blueWord">Дивитись на карті.</span></a>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section3">
+      <div class="container">
+        <div class="tasks__wrapper">
+          <div class="tasks__inner">
+            <div class="tasks__photo">
+              <img src="img/aboutUs/tasks.jpg" alt="tasks">
+            </div>
+            <div class="tasks__title">
+              <h1>Наші основні функції</h1>
+            </div>
+            <div class="tasks__points">
+              <div class="tasks__point">
+                <div class="tasks__point__circle">1</div>
+                <div class="tasks__point__title">
+                  <h3>Підготовка ЗНО</h3>
+                </div>
+                <div class="tasks__point__description">
+                  <p>Організація, структування, інформування, підготовка та спостереження за підготовкою до зовнішьного
+                    незалежного оцінювання (ЗНО). </p>
+                </div>
+              </div> <!-- /.tasks__point -->
+              <div class="tasks__point">
+                <div class="tasks__point__circle">2</div>
+                <div class="tasks__point__title">
+                  <h3>Проведення ЗНО</h3>
+                </div>
+                <div class="tasks__point__description">
+                  <p>Спостереження за проведенням та слідкуванням за правилами проведення зовнішнього незалежного
+                    оцінювання (ЗНО). </p>
+                </div>
+              </div> <!-- /.tasks__point -->
+              <div class="tasks__point">
+                <div class="tasks__point__circle">3</div>
+                <div class="tasks__point__title">
+                  <h3>Моніторинг якості освіти</h3>
+                </div>
+                <div class="tasks__point__description">
+                  <p>Дослідження та мотінрониг якості освіти у регіонах, які обслуговуються Київським Регіональним
+                    Центром
+                    Оцінювання Освіти. </p>
+                </div>
+              </div> <!-- /.tasks__point -->
+              <div class="tasks__point">
+                <div class="tasks__point__circle">4</div>
+                <div class="tasks__point__title">
+                  <h3>Інформування освіти</h3>
+                </div>
+                <div class="tasks__point__description">
+                  <p>Одна з наших найголовніших задач - зробити інформацію про освіту, якомога простіше і доступною для
+                    всіх! </p>
+                </div>
+              </div> <!-- /.tasks__point -->
+            </div> <!-- /.tasks__points -->
+          </div> <!-- /.tasks__inner -->
+        </div> <!-- /.tasks__wrapper -->
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section4">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Основні сфери діяльності </h1>
+          </div>
+        </div>
+        <div class="slider__wrapper">
+          <div class="slider">
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Банк завдань ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  участь у формуванні банка завдань зовнішнього незалежного оцінювання (розроблення, рецензування,
+                  апробація)
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Реєстрація на ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  організація реєстрації осіб для участі у зовнішньому незалежному оцінюванні та інформування учасників
+                  про регістрацію
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Мережа пунктів проведення ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  формування у встановленому порядку мережі пунктів проведення зовнішнього незалежного оцінювання
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Мережа пунктів реєстрації і т.д</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  утворення пунктів реєстрації, пунктів перевірки, пунктів обробки та пунктів проведення зовнішнього
+                  незалежного оцінювання
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Банк завдань ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  участь у формуванні банка завдань зовнішнього незалежного оцінювання (розроблення, рецензування,
+                  апробація)
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Реєстрація на ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  організація реєстрації осіб для участі у зовнішньому незалежному оцінюванні та інформування учасників
+                  про регістрацію
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Мережа пунктів проведення ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  формування у встановленому порядку мережі пунктів проведення зовнішнього незалежного оцінювання
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Мережа пунктів реєстрації і т.д</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  утворення пунктів реєстрації, пунктів перевірки, пунктів обробки та пунктів проведення зовнішнього
+                  незалежного оцінювання
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Банк завдань ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  участь у формуванні банка завдань зовнішнього незалежного оцінювання (розроблення, рецензування,
+                  апробація)
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Реєстрація на ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  організація реєстрації осіб для участі у зовнішньому незалежному оцінюванні та інформування учасників
+                  про регістрацію
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Мережа пунктів проведення ЗНО</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  формування у встановленому порядку мережі пунктів проведення зовнішнього незалежного оцінювання
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+            <div class="slider__item">
+              <div class="slider__item__title">
+                <h3>Мережа пунктів реєстрації і т.д</h3>
+              </div>
+              <div class="slider__item__text">
+                <p>
+                  утворення пунктів реєстрації, пунктів перевірки, пунктів обробки та пунктів проведення зовнішнього
+                  незалежного оцінювання
+                </p>
+              </div>
+            </div> <!-- /.slider__item -->
+          </div> <!-- /.slider -->
+        </div> <!-- /.slider__wrapper -->
+    </section>
+
+    <section class="section5">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Наше завдання - зробити інформацію простою</h1>
+          </div>
+        </div>
+        <div class="section__text">
+          <p>Ми переглянули подачу інформації про навчальний процес з метою зробити її простіше і доступніше для
+            <span class="blueWord">кожного.</span> Тут ми зібрали все найважливіше, що потрібно знати про головні
+            іспити:
+            реєстрація на них, необхідні вимоги і вся
+            інша головна інформація про них.</p>
+          <br>
+          <p>Ми переробили структуру інформації, інтерфейс і навігацію по сайту з метою поліпшити її зручність і комфорт
+            для
+            звичайного користувача, а також забезпечити простоту, щоб уникати конфлікт користувача і інтерфейсу. Ми
+            знаємо,
+            про проблему з сайтами навчальних закладів, а також навчальних центрів тому в рамках
+            <a href="#"><span class="blueWord">глобаної реформи</span></a> освіти ми взяли на розгляд: повний редизайн
+            сайтів і
+            сервісів, з метою зберегти початкову інформацію з рідкісними її змінами,
+            а також додаванням нової інформації, але при цьому оновити її подачу і переробити структуру.</p>
+          <br>
+          <p>Також, на сайті є інформація для екзаменаторів і організаторів: деталі реєстрації, необхідні вимоги для
+            кандидатів і т.д (ознайомитися з необхідною інформацією можна в секціях або на сторінках цікавлять іспитів,
+            а
+            так само на сторінці "<a href="questions.html"><span class="blueWord">Питання</span></a>").</p>
+          <br>
+          <p>З метою ще більше поліпшити інформацію і її подачу, Ви можете допомогти, просто оцінивши сайт так, як він
+            виглядає зараз! <span class="blueWord"><span class="emoji">☟</span></span></p>
+        </div> <!-- /.section__text -->
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section6">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Наскільки Вам сподобався сайт?</h1>
+          </div>
+          <div class="section__suptitle">
+            <h5>Дякуємо, за відгук!</h5>
+          </div>
+        </div>
+        <div class="rateUs__wrapper">
+          <div class="reteUs__inner">
+            <div class="star">
+              <input type="radio" name="star" id="r1">
+              <label for="r1"></label>
+              <input type="radio" name="star" id="r2">
+              <label for="r2"></label>
+              <input type="radio" name="star" id="r3">
+              <label for="r3"></label>
+              <input type="radio" name="star" id="r4">
+              <label for="r4"></label>
+              <input type="radio" name="star" id="r5">
+              <label for="r5"></label>
+            </div> <!-- /.star -->
+          </div> <!-- /.rateUs__inner -->
+        </div> <!-- /.rateUs__wrapper -->
+      </div> <!-- /.container -->
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__navigation">
+        <div class="footer__logo">
+          <img src="img/main/logoFooter.png" alt="logo">
+        </div>
+        <nav class="nav__footer">
+          <a class="nav__link" href="index.html">Головна</a>
+          <a class="nav__link" href="aboutUs.html">Про нас</a>
+          <a class="nav__link" href="exams.html">Іспити</a>
+          <a class="nav__link" href="questions.html">Питання</a>
+          <a class="nav__link" href="contacts.html">Контакти</a>
+        </nav>
+      </div> <!-- /.footer__navigation -->
+      <div class="watermark">
+        <h4>Макет, а також сайт зробив Дмитро Юрін</h4>
+        <h4>Макет, а также сайт сделал Дмитрий Юрин</h4>
+        <h4>Template and website made by Dmitry Yurin</h4>
+      </div>
+    </div>
+  </footer>
+  <a class="up_down_btn" title="Наверх">&uarr;</a>
+</body>
+<script src="js/mobileMenu.js"></script>
+<script src="js/submenu.js"></script>
+<script src="js/UpDownButtons.js"></script>
+
+</html>

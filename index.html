@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Головна - КРЦОЯО</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- When burger-menu on = delete searchBar -->
+  <script type="text/javascript">
+  {
+    if (screen.width > 1028) {
+      document.write('<script type="text/javascript" src="js/searchBar.js"></sc' + 'ript>');
+    }
+  }
+</script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html"><img src="img/main/logo-header.png" alt="logo"></a>
+        </div>
+        <nav class="nav__header">
+          <ul class="menu-list">
+            <li><a href="index.html" class="menu__link active">Головна</a></li>
+            <li><a href="aboutUs.html" class="menu__link">Про нас</a></li>
+            <li>
+              <a href="exams.html" class="menu__link">Іспити
+                <object class="menu__arrow" data="img/svg/arrow-down-sign-to-navigate.svg" type="image/svg+xml"></object>
+              </a>
+              <ul class="menu-sublist">
+                <li><a href="zno.html" class="menu__sublink">ЗНО/ДПА</a></li>
+                <li><a href="evi-evrf.html" class="menu__sublink">ЄВІ/ЄФВВ</a></li>
+                <li><a href="pisa.html" class="menu__sublink">PISA</a></li>
+                <li><a href="certification.html" class="menu__sublink">Сертифікація</a></li>
+                <li><a href="registration_1.html" class="menu__sublink">Пробне ЗНО</a></li>
+              </ul>
+            </li>
+            <li><a href="questions.html" class="menu__link">Питання</a></li>
+            <li><a href="contacts.html" class="menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <img src="img/svg/loupe1.svg" class="ion-ios-search-strong" id="search-icon"></img>
+      </div> <!-- /.header__inner -->
+      <div class="burger-menu">
+        <a href="#" class="burger-menu__button">
+          <span class="burger-menu__lines"></span>
+          <ul class="burger-menu__nav">
+            <li><a href="index.html" class="burger__link">Головна</a></li>
+            <li><a href="aboutUs.html" class="burger__link">Про нас</a></li>
+            <li>
+              <a href="exams.html" class="burger__link">Іспити</a>
+              <ul>
+                <li><a href="zno.html" class="burger__sublink">ЗНО/ДПА</a></li>
+                <li><a href="evi-evrf.html" class="burger__sublink">ЄВІ/ЄФВВ</a></li>
+                <li><a href="pisa.html" class="burger__sublink">PISA</a></li>
+                <li><a href="certification.html" class="burger__sublink">Сертифікація</a></li>
+                <li><a href="registration_1.html" class="burger__sublink">Пробне ЗНО</a></li>
+              </ul>
+            </li>
+            <li><a href="questions.html" class="burger__link">Питання</a></li>
+            <li><a href="contacts.html" class="burger__link">Контакти</a></li>
+            <form action="#" class="form__burger">
+              <input type="text" id="burger__search" name="s" placehplder="Введіть в пошук">
+              <button id="burger__search__button" type="submit" name="burger-search">Шукати</button>
+            </form>
+          </ul>
+        </a>
+        <div class="burger-menu__overlay"></div>
+      </div> <!-- /.burder-menu -->
+    </div> <!-- /.container -->
+    <div id="search-menu">
+          <div class="wrapper">
+            <form id="form" action="#" method="">
+              <input id="popup-search" type="text" name="u" placeholder="Введіть в пошук"/>
+              <button id="popup-search-button" type="submit" name="search">Шукати</button>
+            </form>
+          </div>
+        </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro__inner">
+        <div class="intro__photo">
+          <img src="img/main/student.png" alt="student">
+        </div>
+        <div class="intro__text">
+          <h1>Наше завдання - зробити інформацію про ЗНО та інші іспити якомога <span class="blueWord">простіше і
+              доступніше</span> для всіх!</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section1">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Розклад іспитів ЗНО 2021</h1>
+          </div>
+        </div>
+        <div class="graphic">
+          <div class="graphic__wrapper">
+            <div class="graphic__inner">
+
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/calculations 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Математика</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>28 травня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/ukraine 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Українська мова</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>1 червня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/book 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Українська мова та література</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>1 червня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/united-states-of-america 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Англійська мова</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>25 травня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/parchment 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Історія України</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>4 червня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/atom 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Фізика</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>7 червня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/dna 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Біологія</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>10 червня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/chemistry 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Хімія</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>21 травня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/globe 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Географія</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>15 червня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/german flag.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Німецька мова</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>24 травня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/spain flag 1.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Іспанська мова</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>21 травня</p>
+                </div>
+              </div>
+              <div class="graphic__item">
+                <div class="graphic__icon">
+                  <object data="img/svg/french flag.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="graphic__title">
+                  <h4>Французька мова</h4>
+                </div>
+                <div class="graphic__date">
+                  <p>24 травня</p>
+                </div>
+              </div>
+            </div> <!-- /.graphic__inner -->
+          </div> <!-- /.graphic__wrapper -->
+        </div> <!-- /.graphic -->
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section2">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Більше про іспити</h1>
+          </div>
+          <div class="section__suptitle">
+            <h4>Ми зібрали головну інформацію про іспити в одному місці! Обирай те, що тобі потрібно і дізнайся про все,
+              що тебе цікавить.</h4>
+          </div>
+        </div>
+        <div class="card__wrapper">
+          <div class="card__inner">
+            <div class="card">
+              <div class="card__icon">
+                <object data="img/svg/school 1.svg" type=""></object>
+              </div>
+              <div class="card__title">
+                <h5>ЗНО/ДПА</h5>
+              </div>
+              <div class="card__description">
+                <p>Зовнішнє незалежне оцінювання(ЗНО) забезпечує право осіб на рівний доступ до вищої освіти та
+                  оцінювання
+                  результатів навчання, здобутих на основі повної загальної середньої освіти.</p>
+              </div>
+              <div class="card__button">
+                <div class="card__button__inner">
+                  <a href="zno.html">Дізнатися більше</a>
+                </div>
+              </div>
+            </div> <!-- /.card -->
+            <div class="card">
+              <div class="card__icon">
+                <object data="img/svg/graduation-hat 1.svg" type=""></object>
+              </div>
+              <div class="card__title">
+                <h5>ЄВІ/ЄФВВ</h5>
+              </div>
+              <div class="card__description">
+                <p>Єдине фахове вступне випробування та єдиний вступний іспит – це форма вступного випробування для
+                  вступу
+                  на навчання для здобуття ступеня магістра на основі здобутого ступеня вищої освіти.</p>
+              </div>
+              <div class="card__button">
+                <div class="card__button__inner">
+                  <a href="evi-evrf.html">Дізнатися більше</a>
+                </div>
+              </div>
+            </div> <!-- /.card -->
+            <div class="card">
+              <div class="card__icon">
+                <object data="img/svg/books 1.svg" type=""></object>
+              </div>
+              <div class="card__title">
+                <h5>PISA</h5>
+              </div>
+              <div class="card__description">
+                <p>Programme for International Student Assessment (PISA) — це міжнародне дослідження якості освіти,
+                  започатковане Організацією економічного співробітництва та розвитку (OECD). Відбувається раз на 3
+                  роки.
+                </p>
+              </div>
+              <div class="card__button">
+                <div class="card__button__inner">
+                  <a href="pisa.html">Дізнатися більше</a>
+                </div>
+              </div>
+            </div> <!-- /.card -->
+            <div class="card">
+              <div class="card__icon">
+                <object data="img/svg/certificate 1.svg" type=""></object>
+              </div>
+              <div class="card__title">
+                <h5>Сертифікація</h5>
+              </div>
+              <div class="card__description">
+                <p>Метою сертифікації є виявлення та стимулювання педагогічних працівників з високим рівнем професійної
+                  майстерності, які володіють методиками компетентнісного навчання і новими освітніми технологіями!</p>
+              </div>
+              <div class="card__button">
+                <div class="card__button__inner">
+                  <a href="certification.html">Дізнатися більше</a>
+                </div>
+              </div>
+            </div> <!-- /.card -->
+          </div> <!-- /.card__inner -->
+        </div> <!-- /.card__wrapper -->
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section3">
+      <div class="container">
+        <h1>ЗНО в відео</h1>
+        <div class="videos__wrapper">
+          <div class="videos__inner">
+            <div class="video">
+              <iframe width="960" height="560" src="https://www.youtube.com/embed/blXfdyCMaM0" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe width="960" height="560" src="https://www.youtube.com/embed/fmFGhkNKIPM" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe width="960" height="560" src="https://www.youtube.com/embed/OQ0pqJsBIMo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe width="960" height="560" src="https://www.youtube.com/embed/7SDwpIZzqpk" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div> <!-- /.videos__inner -->
+        </div> <!-- /.videos__wrapper -->
+        <div class="videos__button">
+          <a href="#">Більше відео</a>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section4">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Слідкуй за новинами та змінами</h1>
+          </div>
+          <div class="section__suptitle">
+            <h4>Підписуйся та слідкуй за нашим блогом та медіа, щоб дізнаватись про <span class="blueWord">новини та
+                зміни</span> першим!</h4>
+          </div>
+        </div>
+        <div class="blog__wrapper">
+          <div class="blog__inner">
+            <div class="blog__item">
+              <div class="blog__photo">
+                <img src="img/main/blog1.jpg" alt="1">
+              </div>
+              <div class="blog__text">
+                <div class="blog__title">Сертифікація педагогічних працівників</div>
+                <div class="blog__date">27.01.2021 — Новини</div>
+                <div class="blog__description">
+                  <p>Сьогодні завершується основні реєстрація на основний етап сертифікації педагогічних працівників.
+                    (у межах граничної кількості для кожного регіона).</p>
+                  <br>
+                  <p>Додатковий етап реєстрації (28-31 січня) (у межах граничної кількості вчителів початкових класів,
+                    які
+                    можут реєструватись для проходження сертифікації у 2021 році)</p>
+                </div>
+                <div class="blog__button">
+                  <a href="#">Дізнатися більше</a>
+                </div>
+              </div>
+            </div> <!-- /.blog__item -->
+            <div class="blog__item">
+              <div class="blog__photo">
+                <img src="img/main/blog2.jpg" alt="2">
+              </div>
+              <div class="blog__text">
+                <div class="blog__title">ЗНО-2021: ВИ ЗАПИТУЄТЕ — МИ ВІДПОВІДАЄМО</div>
+                <div class="blog__date">27.01.2021 — Новини</div>
+                <div class="blog__description">
+                  <p>1 лютого стартуватиме реєстрація для участі у ЗНО 2021 року.</p>
+                  <br>
+                  <p>Тих, хто хоче дізнатися більше про особливості ЗНО/ДПА-2021, запрошуємо долучитися 29 січня о 14.00
+                    до розмови із виконувачем обов’язків директора Українського центру оцінювання якості освіти Валерієм
+                    Бойком на YouTube каналі центру.</p>
+                </div>
+                <div class="blog__button">
+                  <a href="#">Дізнатися більше</a>
+                </div>
+              </div>
+            </div> <!-- /.blog__item -->
+            <div class="blog__item">
+              <div class="blog__photo">
+                <img src="img/main/blog3.jpg" alt="3">
+              </div>
+              <div class="blog__text">
+                <div class="blog__title">Громадське спостереження</div>
+                <div class="blog__date">25.01.2021 — Новини</div>
+                <div class="blog__description">
+                  <p>Громадьске спостереження за проведенням зовнішнього незалежного оцінювання.</p>
+                  <br>
+                  <p>Реєстрація з 25 січня!</p>
+                </div>
+                <div class="blog__button">
+                  <a href="#">Дізнатися більше</a>
+                </div>
+              </div>
+            </div> <!-- /.blog__item -->
+            <div class="blog__item">
+              <div class="blog__photo">
+                <img src="img/main/blog4.jpg" alt="4">
+              </div>
+              <div class="blog__text">
+                <div class="blog__title">ПРОБНЕ ЗНО 2021</div>
+                <div class="blog__date">20.01.2021 — Новини</div>
+                <div class="blog__description">
+                  <p>Кількість осіб, які створили особистий кабінет, для проходження Пробного ЗНО:</p>
+                  <br>
+                  <li>
+                    Київська область - 7367 ч.
+                  </li>
+                  <li>
+                    Черкаська область - 4851 ч.
+                  </li>
+                  <li>
+                    Чернігівська область - 3850 ч.
+                  </li>
+                  <li>
+                    м. Київ - 15294 ч.
+                  </li>
+                  <li>
+                    Всього - 31362 ч.
+                  </li>
+                </div>
+                <div class="blog__button">
+                  <a href="#">Дізнатися більше</a>
+                </div>
+              </div>
+            </div> <!-- /.blog__item -->
+          </div> <!-- /.blog__inner -->
+        </div> <!-- /.blog__wrapper -->
+        <div class="blog__dots">
+          <div class="blog__dot"></div>
+          <div class="blog__dot"></div>
+          <div class="blog__dot"></div>
+        </div>
+        <div class="moreNews__button">
+          <a href="#">Більше новин</a>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__navigation">
+        <div class="footer__logo">
+          <img src="img/main/logoFooter.png" alt="logo">
+        </div>
+        <nav class="nav__footer">
+          <a class="nav__link" href="index.html">Головна</a>
+          <a class="nav__link" href="aboutUs.html">Про нас</a>
+          <a class="nav__link" href="exams.html">Іспити</a>
+          <a class="nav__link" href="questions.html">Питання</a>
+          <a class="nav__link" href="contacts.html">Контакти</a>
+        </nav>
+      </div> <!-- /.footer__navigation -->
+      <div class="watermark">
+        <h4>Макет, а також сайт зробив Дмитро Юрін</h4>
+        <h4>Макет, а также сайт сделал Дмитрий Юрин</h4>
+        <h4>Template and website made by Dmitry Yurin</h4>
+      </div>
+    </div>
+  </footer>
+  <a class="up_down_btn" title="Наверх">&uarr;</a>
+</body>
+<script src="js/mobileMenu.js"></script>
+<script src="js/submenu.js"></script>
+<script src="js/UpDownButtons.js"></script>
+</html>

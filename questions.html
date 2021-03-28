@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Іспити - КРЦОЯО</title>
+  <link rel="stylesheet" href="css/questions.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    {
+      if (screen.width > 1028) {
+        document.write('<script type="text/javascript" src="js/searchBar.js"></sc' + 'ript>');
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html"><img src="img/main/logo-header.png" alt="logo"></a>
+        </div>
+        <nav class="nav__header">
+          <ul class="menu-list">
+            <li><a href="index.html" class="menu__link">Головна</a></li>
+            <li><a href="aboutUs.html" class="menu__link">Про нас</a></li>
+            <li>
+              <a href="exams.html" class="menu__link">Іспити
+                <object class="menu__arrow" data="img/svg/arrow-down-sign-to-navigate.svg" type="image/svg+xml"></object>
+              </a>
+              <ul class="menu-sublist">
+                <li><a href="zno.html" class="menu__sublink">ЗНО/ДПА</a></li>
+                <li><a href="evi-evrf.html" class="menu__sublink">ЄВІ/ЄФВВ</a></li>
+                <li><a href="pisa.html" class="menu__sublink">PISA</a></li>
+                <li><a href="certification.html" class="menu__sublink">Сертифікація</a></li>
+                <li><a href="registration_1.html" class="menu__sublink">Пробне ЗНО</a></li>
+              </ul>
+            </li>
+            <li><a href="questions.html" class="menu__link active">Питання</a></li>
+            <li><a href="contacts.html" class="menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <img src="img/svg/loupe1.svg" class="ion-ios-search-strong" id="search-icon"></img>
+      </div> <!-- /.header__inner -->
+      <div class="burger-menu">
+        <a href="#" class="burger-menu__button">
+          <span class="burger-menu__lines"></span>
+          <ul class="burger-menu__nav">
+            <li><a href="index.html" class="burger__link">Головна</a></li>
+            <li><a href="aboutUs.html" class="burger__link">Про нас</a></li>
+            <li>
+              <a href="exams.html" class="burger__link">Іспити</a>
+              <ul>
+                <li><a href="zno.html" class="burger__sublink">ЗНО/ДПА</a></li>
+                <li><a href="evi-evrf.html" class="burger__sublink">ЄВІ/ЄФВВ</a></li>
+                <li><a href="pisa.html" class="burger__sublink">PISA</a></li>
+                <li><a href="certification.html" class="burger__sublink">Сертифікація</a></li>
+                <li><a href="registration_1.html" class="burger__sublink">Пробне ЗНО</a></li>
+              </ul>
+            </li>
+            <li><a href="questions.html" class="burger__link">Питання</a></li>
+            <li><a href="contacts.html" class="burger__link">Контакти</a></li>
+            <form action="#" class="form__burger">
+              <input type="text" id="burger__search" name="s" placehplder="Введіть в пошук">
+              <button id="burger__search__button" type="submit" name="burger-search">Шукати</button>
+            </form>
+          </ul>
+        </a>
+        <div class="burger-menu__overlay"></div>
+      </div> <!-- /.burder-menu -->
+    </div> <!-- /.container -->
+    <div id="search-menu">
+          <div class="wrapper">
+            <form id="form" action="#" method="">
+              <input id="popup-search" type="text" name="u" placeholder="Введіть в пошук"/>
+              <button id="popup-search-button" type="submit" name="search">Шукати</button>
+            </form>
+          </div>
+        </div>
+  </header>
+  <main>
+    <section class="section1">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Питання</h1>
+          </div>
+          <div class="section__suptitle">
+            <h5>Ми зібрали найчастіші питання та відповіді на них. Також, Ви можете задати питання на почту:
+              <a href="#"><span class="blueWord">zp@kv.testportal.gov.ua</span></a> або по формі в кінці сторінки!</h5>
+          </div>
+        </div>
+        <div class="accordion__wrapper">
+          <ul class="accordion-menu">
+            <li class="open">
+              <div class="dropdownlink">
+                <h3>Як оплачувати Пробне ЗНО?</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems" style="display:block">
+                <p>
+                  Оплата здійснюється протягом 3-х робочих днів з моменту заповнення Замовником реєстраційної форми, але
+                  не пізніше 23 січня 2021 року, через будь-яку банківську установу України.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Чи потрібно зберігати квитанцію?</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  Квитанція зберігається тільки до отримання інформації про зарахування коштів.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Чому тільки один предмет можна обрати при реєстрації?</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  З огляду на загрози, спричинені COVID-19 у 2021 році, кожний учасник (учасниця) зможе вибрати лише
+                  один
+                  предмет для проходження Пробного ЗНО в пункті тестування – 10 квітня, а також додатково завантажити
+                  тестові зошити з усіх навчальних предметів із переліку предметів ЗНО-2021 та пройти тестування вдома.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Чому в особистому кабінеті не змінюється статус оплати одразу після її здійснення?</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  З огляду на загрози, спричинені COVID-19 у 2021 році, кожний учасник (учасниця) зможе вибрати лише
+                  один
+                  предмет для проходження Пробного ЗНО в пункті тестування – 10 квітня, а також додатково завантажити
+                  тестові зошити з усіх навчальних предметів із переліку предметів ЗНО-2021 та пройти тестування вдома.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Як зробити дублікат сертифіката?</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  Детальніше за посиланням “Дублікат та повторний сертифікати”
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Як змінити дату народження?</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  Надіслати на електронну адресу центру заяву про зміну персональних даних з… на … та копію документу,
+                  на
+                  підставі якого здійснювалась реєстрація
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Участь у реєстрації може взяти вахівець, який:</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  <ul>
+                    <li>Має вищу педагогічну освіту та є педагогічним, науково-педагогічним працівником закладу освіти
+                    </li>
+                    <li>Має досвід педагогічної роботи (не менше 5 років)</li>
+                    <li>Має знання предмета</li>
+                  </ul>
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Умови праці екзаменатора:</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  У 2020 році заплановано відкриття пунктів провірки завдань із розгорнутою відповіддю з української: з
+                  української мови - у Києві, Черкасах, Чернігові; з математики - у Києві, Черкасах, Чернігові; з
+                  англійської мови -
+                  у Києві та Черкасах; з німецької, іспанської та французьких мов - у Києві. Під час перевірки відкритої
+                  частини тесту
+                  О екзаменатори забов’язані прибути для опрацювання бланків Б із відповідного предмета до пункту
+                  перевірки, написавши
+                  заяву на відпуску за основним місцем роботи на весь час работи екзаменатором.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Для того, щоб стати екзменатором, потрібно:</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  <ul>
+                    <li>зареєструватися на сайті зно</li>
+                    <li>узяти участь у відповідних навчаннях для кандидатів в екзаменатори, які проводять центр
+                      оцінювання
+                      якості освіти</li>
+                    <li>скласти успішно сертифікаційні випробування</li>
+                  </ul>
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Важливо для екзаменаторів: </h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  Запрошення для участі в програмі навчань кандидатів в екзаменатори буде надіслано на електрону адресу,
+                  указану під
+                  час реєстрації
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Які регіони обслуговуються Регіональним Центром?</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  До території обслуговування Київського регіонального центру оцінювання якості освіти віднесено місто
+                  Київ,
+                  Київську, Черкаську та Чернігівську області. Подробиці можно дізнатися на сторінці Про нас.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdownlink">
+                <h3>Як можно зв’язатись з Регіональним Центром?</h3>
+                <object class="plus" data="img/svg/plus.svg" type=""></object>
+              </div>
+              <ul class="submenuItems">
+                <p>
+                  (044) 360-70-04 та (044) 361-42-17 - номера горячої лінії інформаційної підтримки. Працює з 10:00 до
+                  17:00
+                  (у п'ятницю з 10:00 до 16:00); обідня перерва 13.00-14.00; субота та неділя – вихідні. Також, Ви
+                  можете
+                  подивитись інші контактні дані на сторінці Контакти.
+                </p>
+              </ul>
+            </li>
+          </ul> <!-- /.accordion-menu -->
+        </div> <!-- /.accordion__wrapper -->
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section2">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Залишилися питання?</h1>
+          </div>
+          <div class="section__suptitle">
+            <h5>Задавайте питання, а ми відповімо на нього з часом!</h5>
+          </div>
+        </div>
+        <div class="question-form__wrapper">
+          <form action="" class="question-form" name="question-form">
+            <ul>
+              <li class="input__title">Ім'я *</li>
+              <li><input class="contact__input" type="text" name="name" placeholder="Введіть" /></li>
+            </ul>
+            <ul>
+              <li class="input__title">Email *</li>
+              <li><input class="contact__input" type="text" name="name" placeholder="Введіть" /></li>
+            </ul>
+            <ul>
+              <li class="input__title">Телефон </li>
+              <li><input class="contact__input" type="text" name="name" placeholder="Введіть" /></li>
+            </ul>
+            <ul>
+              <li class="input__title">Питання * </li>
+              <li><textarea class="contact__textarea" name="project" placeholder="Введіть"
+                  style="resize: none;"></textarea></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__navigation">
+        <div class="footer__logo">
+          <img src="img/main/logoFooter.png" alt="logo">
+        </div>
+        <nav class="nav__footer">
+          <a class="nav__link" href="index.html">Головна</a>
+          <a class="nav__link" href="aboutUs.html">Про нас</a>
+          <a class="nav__link" href="exams.html">Іспити</a>
+          <a class="nav__link" href="questions.html">Питання</a>
+          <a class="nav__link" href="contacts.html">Контакти</a>
+        </nav>
+      </div> <!-- /.footer__navigation -->
+      <div class="watermark">
+        <h4>Макет, а також сайт зробив Дмитро Юрін</h4>
+        <h4>Макет, а также сайт сделал Дмитрий Юрин</h4>
+        <h4>Template and website made by Dmitry Yurin</h4>
+      </div>
+    </div>
+  </footer>
+  <a class="up_down_btn" title="Наверх">&uarr;</a>
+</body>
+<script src="js/mobileMenu.js"></script>
+<script src="js/submenu.js"></script>
+<script src="js/UpDownButtons.js"></script>
+<script src="js/accordion.js"></script>
+
+</html>

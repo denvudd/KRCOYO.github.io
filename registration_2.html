@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пробне ЗНО - КРЦОЯО</title>
+  <link rel="stylesheet" href="css/registration.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    {
+      if (screen.width > 1028) {
+        document.write('<script type="text/javascript" src="js/searchBar.js"></sc' + 'ript>');
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html"><img src="img/main/logo-header.png" alt="logo"></a>
+        </div>
+        <nav class="nav__header">
+          <ul class="menu-list">
+            <li><a href="index.html" class="menu__link">Головна</a></li>
+            <li><a href="aboutUs.html" class="menu__link">Про нас</a></li>
+            <li>
+              <a href="exams.html" class="menu__link">Іспити
+                <object class="menu__arrow" data="img/svg/arrow-down-sign-to-navigate.svg" type="image/svg+xml"></object>
+              </a>
+              <ul class="menu-sublist">
+                <li><a href="zno.html" class="menu__sublink">ЗНО/ДПА</a></li>
+                <li><a href="evi-evrf.html" class="menu__sublink">ЄВІ/ЄФВВ</a></li>
+                <li><a href="pisa.html" class="menu__sublink">PISA</a></li>
+                <li><a href="certification.html" class="menu__sublink">Сертифікація</a></li>
+                <li><a href="registration_1.html" class="menu__sublink">Пробне ЗНО</a></li>
+              </ul>
+            </li>
+            <li><a href="questions.html" class="menu__link">Питання</a></li>
+            <li><a href="contacts.html" class="menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <img src="img/svg/loupe1.svg" class="ion-ios-search-strong" id="search-icon"></img>
+      </div> <!-- /.header__inner -->
+      <div class="burger-menu">
+        <a href="#" class="burger-menu__button">
+          <span class="burger-menu__lines"></span>
+          <ul class="burger-menu__nav">
+            <li><a href="index.html" class="burger__link">Головна</a></li>
+            <li><a href="aboutUs.html" class="burger__link">Про нас</a></li>
+            <li>
+              <a href="exams.html" class="burger__link">Іспити</a>
+              <ul>
+                <li><a href="zno.html" class="burger__sublink">ЗНО/ДПА</a></li>
+                <li><a href="evi-evrf.html" class="burger__sublink">ЄВІ/ЄФВВ</a></li>
+                <li><a href="pisa.html" class="burger__sublink">PISA</a></li>
+                <li><a href="certification.html" class="burger__sublink">Сертифікація</a></li>
+                <li><a href="registration_1.html" class="burger__sublink">Пробне ЗНО</a></li>
+              </ul>
+            </li>
+            <li><a href="questions.html" class="burger__link">Питання</a></li>
+            <li><a href="contacts.html" class="burger__link">Контакти</a></li>
+            <form action="#" class="form__burger">
+              <input type="text" id="burger__search" name="s" placehplder="Введіть в пошук">
+              <button id="burger__search__button" type="submit" name="burger-search">Шукати</button>
+            </form>
+          </ul>
+        </a>
+        <div class="burger-menu__overlay"></div>
+      </div> <!-- /.burder-menu -->
+    </div> <!-- /.container -->
+    <div id="search-menu">
+          <div class="wrapper">
+            <form id="form" action="#" method="">
+              <input id="popup-search" type="text" name="u" placeholder="Введіть в пошук"/>
+              <button id="popup-search-button" type="submit" name="search">Шукати</button>
+            </form>
+          </div>
+        </div>
+  </header>
+
+  <main>
+    <section class="section2">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Реєстрація на ПРОБНЕ ЗНО 2021</h1>
+          </div>
+        </div>
+        <div class="section__text">
+          <p>Уведіть дані, що будуть використовуватися для формування реєстраційної картки та під час проведення
+            зовнішнього
+            незалежного оцінювання:</p>
+        </div>
+        <div class="registration-form">
+          <form class="registration-form__wrapper">
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Прізвище</h3>
+              </div>
+              <input type="text" name="sunname" class="regist__input">
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Дата народження</h3>
+              </div>
+              <input type="date" name="birthday" class="regist__input">
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Ім’я</h3>
+              </div>
+              <input type="text" name="name" class="regist__input">
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Контактний телефон</h3>
+              </div>
+              <input type="number" class="regist__input" name="phone" pattern="-?[0-9]*(\.[0-9]+)?">
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>По батькові</h3>
+              </div>
+              <input type="text" class="regist__input">
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Електронна адреса (за наявністю)</h3>
+              </div>
+              <input type="email" name="email" class="regist__input" placeholder="example@gmail.com">
+            </div>
+          </form> <!-- /.registration-form__wrapper -->
+        </div> <!-- /.registration-form -->
+        <div class="section__text">
+          <p>Відомості про заклад освіти:</p>
+        </div>
+        <div class="registration-form">
+          <form action="" class="registration-form__wrapper">
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Регіон проживання</h3>
+              </div>
+              <input type="text" list="cities" class="regist__input" name="cities">
+              <datalist id="cities">
+                <option>Київ</option>
+                <option>Львів</option>
+                <option>Одеса</option>
+                <option>Харків</option>
+                <option>Запоріжжя</option>
+                <option>Вінниця</option>
+                <option>Дніпро</option>
+                <option>Чернівці</option>
+                <option>Івано-Франківськ</option>
+                <option>Кам'янець-Подільський</option>
+                <option>Луцьк</option>
+                <option>Ужгород</option>
+                <option>Чернігів</option>
+                <option>Батурин</option>
+              </datalist>
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Повна назва закладу освіти</h3>
+              </div>
+              <input type="text" list="education" class="regist__input" name="education">
+              <datalist id="education">
+                <option>Національний Авіаційний Університет</option>
+                <option>КПУ</option>
+                <option>Спеціалізована школа інформаційних технологій №52</option>
+                <option>Університет Тараса Шевченка</option>
+              </datalist>
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Місто або регіон</h3>
+              </div>
+              <input type="text" list="cities" class="regist__input" name="cities">
+              <datalist id="cities">
+                <option>Київ</option>
+                <option>Львів</option>
+                <option>Одеса</option>
+                <option>Харків</option>
+                <option>Запоріжжя</option>
+                <option>Вінниця</option>
+                <option>Дніпро</option>
+                <option>Чернівці</option>
+                <option>Івано-Франківськ</option>
+                <option>Кам'янець-Подільський</option>
+                <option>Луцьк</option>
+                <option>Ужгород</option>
+                <option>Чернігів</option>
+                <option>Батурин</option>
+              </datalist>
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Освітньо-кваліфікаційний рівень</h3>
+              </div>
+              <input type="text" list="degree" class="regist__input" name="education" spellcheck='false'>
+              <datalist id="degree">
+                <option>Молодший спеціаліст</option>
+                <option>Випускник середньої освіти</option>
+                <option>Студент вищого навчального закладу</option>
+                <option>Бакалавріат технічного навчального закладу</option>
+              </datalist>
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Заклад освіти</h3>
+              </div>
+              <input type="text" list="education" class="regist__input" spellcheck='false' name="education">
+              <datalist id="education">
+                <option>Національний Авіаційний Університет</option>
+                <option>КПУ</option>
+                <option>Спеціалізована школа інформаційних технологій №52</option>
+                <option>Університет Тараса Шевченка</option>
+              </datalist>
+            </div>
+            <div class="registration-form__input">
+              <div class="regist__input__title">
+                <h3>Електронна адреса (за наявністю)</h3>
+              </div>
+              <input type="email" class="regist__input" multiple name="email" placeholder="example@gmail.com">
+            </div>
+          </form> <!-- /.registration-form__wrapper -->
+        </div> <!-- /.registration-form -->
+        <div class="section__text">
+          <p>Вибір предмету для ПРОБНОГО ЗНО (можна обрати лише <strong>ОДИН</strong> предмет):</p>
+        </div>
+        <div class="registration-form">
+          <form action="" class="registration-form__wrapper">
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Математика</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">профільний рівень</div>
+                <label for="">
+                  <input type="radio" name="subject" value="3" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Українська мова</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Українська мова та література</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Англійська мова</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Історія України</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Хімія</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Фізика</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Географія</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Французька мова</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+            <div class="registration-form__radio">
+              <div class="regist__radio__title">
+                <h3>Німецька мова</h3>
+              </div>
+              <div class="regist__radio__wrapper">
+                <label for="1">
+                  <input type="radio" name="subject" value="1" class="regist__radio">
+                </label>
+                <label for="">
+                  <div class="regist__radio__subject">рівень стандарту</div>
+                </label>
+                <label for="2">
+                  <input type="radio" name="subject" value="2" class="regist__radio">
+                </label>
+                <div class="regist__radio__subject">створення особливих умов</div>
+              </div>
+            </div>
+          </form> <!-- /.registration-form__wrapper -->
+        </div> <!-- /.registration-form -->
+        <div class="section__text">
+          <p>Після обрання потрібних пунктів, Вам потрібно роздрукувати квитанцію на оплату зараз, або пізніже у лічному
+            кабінеті. Здійснити оплату за квитанцією на оплату треба протягом 3 (трьох) календарних днів, уважно
+            перевіривши
+            відомості, що вказані у квитанції про оплату, зокрема в частині призначення платежу (код, прізвище, ім’я, по
+            батькові особи, за пробне зовнішнє незалежне оцінювання з «предмета»). Потім, Вам потрібно зберегти
+            квитанцію до
+            часу проходження пробного ЗНО.</p>
+        </div>
+        <div class="registration-form">
+          <form action="" class="registration-form__wrapper checkbox-col">
+            <div class="regist__checkbox__wrapper">
+              <label for="1">
+                <input type="checkbox" class="regist__checkbox" value="1" name="data-choise">
+                <div class="regist__checkbox__title">
+                  <h3>Роздрукувати квитанцію на оплату зараз</h3>
+                </div>
+              </label>
+              <label for="2">
+                <input type="checkbox" class="regist__checkbox" value="2" name="data-choise">
+                <div class="regist__checkbox__title">
+                  <h3>Я перевірив заповненні дані, та згоден з подачею реєстрації на пробне ЗНО</h3>
+                </div>
+              </label>
+              <label for="3">
+                <input type="checkbox" class="regist__checkbox" value="3" name="data-choise">
+                <div class="regist__checkbox__title">
+                  <h3>Я ознайомився з правилами проведення та загальною інформацією з пробного ЗНО</h3>
+                </div>
+              </label>
+            </div>
+          </form> <!-- /.registration-form__wrapper -->
+        </div> <!-- /.registration-form -->
+        <div class="regist__button">
+          <div class="regist__button__wrapper">
+            <button class="registration__modal">Зареєструватись на пробне ЗНО</button>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+  </main>
+
+  <div class="modal">
+    <div class="modal__block">
+      <button class="modal__close">✘</button>
+      <h2 class="modal__subtitle">Заявка успішно відправленна!</h2>
+      <img src="img/registration/modal.png" alt="">
+      <h3 class="modal__title">Дані буде перевіренно і надіслано вам по почті.</h3>
+      <h3 class="modal__title">Дякуємо за реєстрацію!</h3>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__navigation">
+        <div class="footer__logo">
+          <img src="img/main/logoFooter.png" alt="logo">
+        </div>
+        <nav class="nav__footer">
+          <a class="nav__link" href="index.html">Головна</a>
+          <a class="nav__link" href="aboutUs.html">Про нас</a>
+          <a class="nav__link" href="exams.html">Іспити</a>
+          <a class="nav__link" href="questions.html">Питання</a>
+          <a class="nav__link" href="contacts.html">Контакти</a>
+        </nav>
+      </div> <!-- /.footer__navigation -->
+
+      <div class="watermark">
+        <h4>Макет, а також сайт зробив Дмитро Юрін</h4>
+        <h4>Макет, а также сайт сделал Дмитрий Юрин</h4>
+        <h4>Template and website made by Dmitry Yurin</h4>
+      </div>
+    </div>
+  </footer>
+  <a class="up_down_btn" title="Наверх">&uarr;</a>
+</body>
+<script src="js/mobileMenu.js"></script>
+<script src="js/submenu.js"></script>
+<script src="js/UpDownButtons.js"></script>
+<script src="js/modal.js"></script>
+
+</html>

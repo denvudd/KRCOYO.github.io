@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PISA - КРЦОЯО</title>
+  <link rel="stylesheet" href="css/pisa.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    {
+      if (screen.width > 1028) {
+        document.write('<script type="text/javascript" src="js/searchBar.js"></sc' + 'ript>');
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html"><img src="img/main/logo-header.png" alt="logo"></a>
+        </div>
+        <nav class="nav__header">
+          <ul class="menu-list">
+            <li><a href="index.html" class="menu__link">Головна</a></li>
+            <li><a href="aboutUs.html" class="menu__link">Про нас</a></li>
+            <li>
+              <a href="exams.html" class="menu__link">Іспити
+                <object class="menu__arrow" data="img/svg/arrow-down-sign-to-navigate.svg" type="image/svg+xml"></object>
+              </a>
+              <ul class="menu-sublist">
+                <li><a href="zno.html" class="menu__sublink">ЗНО/ДПА</a></li>
+                <li><a href="evi-evrf.html" class="menu__sublink">ЄВІ/ЄФВВ</a></li>
+                <li><a href="pisa.html" class="menu__sublink">PISA</a></li>
+                <li><a href="certification.html" class="menu__sublink">Сертифікація</a></li>
+                <li><a href="registration_1.html" class="menu__sublink">Пробне ЗНО</a></li>
+              </ul>
+            </li>
+            <li><a href="questions.html" class="menu__link">Питання</a></li>
+            <li><a href="contacts.html" class="menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <img src="img/svg/loupe1.svg" class="ion-ios-search-strong" id="search-icon"></img>
+      </div> <!-- /.header__inner -->
+      <div class="burger-menu">
+        <a href="#" class="burger-menu__button">
+          <span class="burger-menu__lines"></span>
+          <ul class="burger-menu__nav">
+            <li><a href="index.html" class="burger__link">Головна</a></li>
+            <li><a href="aboutUs.html" class="burger__link">Про нас</a></li>
+            <li>
+              <a href="exams.html" class="burger__link">Іспити</a>
+              <ul>
+                <li><a href="zno.html" class="burger__sublink">ЗНО/ДПА</a></li>
+                <li><a href="evi-evrf.html" class="burger__sublink">ЄВІ/ЄФВВ</a></li>
+                <li><a href="pisa.html" class="burger__sublink">PISA</a></li>
+                <li><a href="certification.html" class="burger__sublink">Сертифікація</a></li>
+                <li><a href="registration_1.html" class="burger__sublink">Пробне ЗНО</a></li>
+              </ul>
+            </li>
+            <li><a href="questions.html" class="burger__link">Питання</a></li>
+            <li><a href="contacts.html" class="burger__link">Контакти</a></li>
+            <form action="#" class="form__burger">
+              <input type="text" id="burger__search" name="s" placehplder="Введіть в пошук">
+              <button id="burger__search__button" type="submit" name="burger-search">Шукати</button>
+            </form>
+          </ul>
+        </a>
+        <div class="burger-menu__overlay"></div>
+      </div> <!-- /.burder-menu -->
+    </div> <!-- /.container -->
+    <div id="search-menu">
+          <div class="wrapper">
+            <form id="form" action="#" method="">
+              <input id="popup-search" type="text" name="u" placeholder="Введіть в пошук"/>
+              <button id="popup-search-button" type="submit" name="search">Шукати</button>
+            </form>
+          </div>
+        </div>
+  </header>
+  <main>
+    <section class="section1">
+      <div class="container">
+        <div class="section__intro">
+          <div class="intro__icon">
+            <object data="img/svg/books 1.svg" type=""></object>
+          </div>
+          <div class="intro__title">
+            <h1>Моніторингові дослідження (PISA)</h1>
+          </div>
+          <div class="intro__suptitle">
+            <h4>У 2016 році Україна вперше долучилася до Програми міжнародного оцінювання учнів – PISA. Програма має
+              на меті порівняти освітні системи близько 80 країн світу через вимірювання компетентностей учнів із
+              читання, математики та природничих дисциплін, прямо не пов’язаних з оволодінням шкільними програмами.
+              Крім того, велика увага у дослідженні PISA приділяється вивченню факторів, що впливають на успішне
+              навчання учнів.
+            </h4>
+          </div>
+          <div class="intro__line">
+            <hr class="line">
+          </div>
+        </div> <!-- /.section__intro -->
+        <div class="tasks__wrapper">
+          <div class="tasks__inner">
+            <div class="tasks__photo">
+              <img src="img/exams/tasks3.jpg" alt="tasks">
+            </div>
+            <div class="tasks__title">
+              <h1>Що дає участь у PISA?</h1>
+            </div>
+            <div class="tasks__points">
+              <div class="tasks__point">
+                <div class="tasks__point__circle">1</div>
+                <div class="tasks__point__title">
+                  <h3>Дані про грамотність</h3>
+                </div>
+                <div class="tasks__point__description">
+                  <p>Дані про сформованість читацької, математичної та науково-природничої грамотності у 15-річних
+                    підлітків.</p>
+                </div>
+              </div> <!-- /.tasks__point -->
+              <div class="tasks__point">
+                <div class="tasks__point__circle">2</div>
+                <div class="tasks__point__title">
+                  <h3>Характеристику</h3>
+                </div>
+                <div class="tasks__point__description">
+                  <p>Характеристику освітнього середовища, умов життя і навчання підлітків.</p>
+                </div>
+              </div> <!-- /.tasks__point -->
+              <div class="tasks__point">
+                <div class="tasks__point__circle">3</div>
+                <div class="tasks__point__title">
+                  <h3>Динаміка результатів</h3>
+                </div>
+                <div class="tasks__point__description">
+                  <p>Індикатори, що вказують на динаміку результатів країн-учасниць.</p>
+                </div>
+              </div> <!-- /.tasks__point -->
+              <div class="tasks__point">
+                <div class="tasks__point__circle">4</div>
+                <div class="tasks__point__title">
+                  <h3>Дані про досвід</h3>
+                </div>
+                <div class="tasks__point__description">
+                  <p>Дані про досвід інших країн-учасниць PISA.</p>
+                </div>
+              </div> <!-- /.tasks__point -->
+            </div> <!-- /.tasks__points -->
+          </div> <!-- /.tasks__inner -->
+        </div> <!-- /.tasks__wrapper -->
+        <div class="pisa-stages">
+          <div class="pisa-stages__img">
+            <img src="img/pisa/dates-pisa.jpg" alt="Даты проведения этапов">
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="section2">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Як проводять дослідження?</h1>
+          </div>
+        </div>
+        <div class="section__text">
+          <p>Дослідження проводиться раз на три роки, починаючи з 2000-го. У ньому беруть участь 15-річні підлітки,
+            оскільки саме в цьому віці у більшості країн світу закінчують здобуття обов’язкової освіти.</p>
+          <br>
+          <p>Базова кількість учасників вибірки дослідження становить близько 5 000 осіб, при цьому точна кількість є
+            різною з огляду на дослідницькі потреби кожної країни.</p>
+          <br>
+          <p>PISA не перевіряє, чи засвоїли учні зміст освітньої програми, а оцінює, наскільки учні здатні
+            використовувати здобуті знання, уміння та навички в реальному житті. Інструментом для цього слугують тести –
+            вони визначають, наскільки учні володіють трьома ключовими компетентностями (грамотностями):</p>
+        </div>
+        <div class="programms__wrapper">
+          <div class="programms__inner">
+            <div class="programm">
+              <div class="programm__photo">
+                <img src="img/exams/reading.jpg" alt="Читання">
+              </div>
+              <h4 class="programm__title">Читання</h4>
+            </div>
+            <div class="programm">
+              <div class="programm__photo">
+                <img src="img/exams/math.jpg" alt="Математика">
+              </div>
+              <h4 class="programm__title">Математика</h4>
+            </div>
+            <div class="programm">
+              <div class="programm__photo">
+                <img src="img/exams/nature.jpg" alt="Природничо-
+              наукова">
+              </div>
+              <h4 class="programm__title">Природничо-
+                наукова</h4>
+            </div>
+          </div> <!-- /.programms__inner -->
+        </div> <!-- /.programms__wrapper -->
+        <div class="section__text">
+          <p>Кожне дослідження PISA має провідну компетентність, яка досліджується глибше за інші. Для PISA-2018 це була
+            читацька грамотність, для PISA-2021 провідною стане математична, для PISA-2024 – природничо-наукова
+            компетентність. Таким чином, один повний цикл дослідження PISA триває 9 років.</p>
+        </div>
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Україна у PISA</h1>
+          </div>
+        </div>
+        <div class="section__text">
+          <p><strong>У 2018 році Україна вперше взяла повноцінну участь у дослідженнію.</strong> Українські підлітки у
+            віці 15 років, які взяли участь у PISA, під час дослідження навчались у старших класах різних закладів
+            загальної середньої освіти, на 1-му курсі закладів вищої освіти І–ІІ рівнів акредитації або у
+            професійно-технічних закладах освіти.</p>
+          <br>
+          <p>Оскільки PISA-2018 показала проблему із математичною грамотністю в школярів,
+            <strong>2020-2021 навчальний рік буде оголошено Роком математики в Україні.</strong> Це допоможе п
+            ривернути увагу суспільства до розвитку математичної грамотності не лише у школярів, а й у всіх громадян
+            України.</p>
+          <br>
+          <p>Розпочато підготовку до проведення PISA-2021. Під час нового дослідження планується участь України в
+            пілотуванні розділу «Креативне мислення» та залучення до тестування дітей з особливими освітніми потребами.
+            Планується, що, на відміну від дослідження 2018 року, учасники PISA-2021 в Україні проходитимуть тестування
+            вже за допомогою комп’ютерів.</p>
+          <br>
+          <p>Детальну інформацію про PISA – рамкові матеріали, зразки завдань попередніх циклів, новини про стан
+            підготовки до проведення дослідження в Україні – <span class="blueWord">розміщено на офіційному сайті
+              Програми в Україні: <a href=#http://pisa.testportal.gov.ua/">pisa.testportal.gov.ua </a> </span> </p>
+                </div> </div> <!-- /.container -->
+    </section>
+
+    <section class="section3">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__title">
+            <h1>Посилання</h1>
+          </div>
+        </div>
+        <div class="links__wrapper">
+          <div class="links__inner">
+            <a href="#" class="link__item link1" target="_blank">
+              <div class="link__title">
+                <h2>Офіційний сайт PISA в Україні</h2>
+              </div>
+            </a>
+            <a href="#" class="link__item link2" target="_blank">
+              <div class="link__title">
+                <h2>Нормативна база</h2>
+              </div>
+            </a>
+            <a href="#" class="link__item link3" target="_blank">
+              <div class="link__title">
+                <h2>Корисні матеріали</h2>
+              </div>
+            </a>
+            <a href="#" class="link__item link4" target="_blank">
+              <div class="link__title">
+                <h2>Популярні запитання</h2>
+              </div>
+            </a>
+            <a href="#" class="link__item link5" target="_blank">
+              <div class="link__title">
+                <h2>Блог</h2>
+              </div>
+            </a>
+            <a href="#" class="link__item link6" target="_blank">
+              <div class="link__title">
+                <h2>Завдання PISA</h2>
+              </div>
+            </a>
+            <a href="#" class="link__item link7" target="_blank">
+              <div class="link__title">
+                <h2>Звіти та дані</h2>
+              </div>
+            </a>
+          </div> <!-- /.links__inner -->
+        </div> <!-- /.links__wrapper -->
+        <div class="questions__wrapper">
+          <div class="questions__inner">
+            <div class="section__header">
+              <div class="section__title">
+                <h1>З’явилось питання?</h1>
+              </div>
+              <div class="section__suptitle">
+                <h5><a href="questions.html"><span class="blueWord">Подивись</span></a> часті питання, або задай його
+                  сам!
+                </h5>
+              </div>
+            </div>
+            <div class="questions__button">
+              <a href="questions.html">Задати питання</a>
+            </div>
+          </div> <!-- /.questions__inner -->
+        </div> <!-- /.questions__wrapper -->
+      </div> <!-- /.container -->
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__navigation">
+        <div class="footer__logo">
+          <img src="img/main/logoFooter.png" alt="logo">
+        </div>
+        <nav class="nav__footer">
+          <a class="nav__link" href="index.html">Головна</a>
+          <a class="nav__link" href="aboutUs.html">Про нас</a>
+          <a class="nav__link" href="exams.html">Іспити</a>
+          <a class="nav__link" href="questions.html">Питання</a>
+          <a class="nav__link" href="contacts.html">Контакти</a>
+        </nav>
+      </div> <!-- /.footer__navigation -->
+      <div class="watermark">
+        <h4>Макет, а також сайт зробив Дмитро Юрін</h4>
+        <h4>Макет, а также сайт сделал Дмитрий Юрин</h4>
+        <h4>Template and website made by Dmitry Yurin</h4>
+      </div>
+    </div>
+  </footer>
+  <a class="up_down_btn" title="Наверх">&uarr;</a>
+</body>
+<script src="js/mobileMenu.js"></script>
+<script src="js/submenu.js"></script>
+<script src="js/UpDownButtons.js"></script>
+
+</html>
