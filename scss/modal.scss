@@ -1,0 +1,66 @@
+@import 'vars';
+@import 'mixin';
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.open {
+  display: flex;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+
+.modal__block {
+  position: relative;
+  max-width: 640px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  img {
+    margin-top: $p1;
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+  }
+}
+
+.modal__subtitle {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.modal__title {
+  @include mont21Semi();
+  margin-bottom: $p2;
+  margin-top: $p2;
+  padding: 0 $p2;
+  text-align: center;
+}
+
+.modal__close {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}

@@ -1,0 +1,82 @@
+@import 'vars';
+@import 'mixin';
+
+/* FOOTER */
+
+.footer {
+  @include gradient3();
+}
+
+.nav__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__link {
+  @include mont18Bold();
+  margin-right: 40px;
+  text-decoration: none;
+  color: $black;
+  margin-right: 40px;
+  transition: 0.2s ease;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $p2;
+}
+
+.watermark {
+  text-align: center;
+  padding-top: $p5;
+  padding-bottom: $p2;
+
+  h4 {
+    @include mont14Regular();
+  }
+}
+
+@media (max-width: 1366px) {
+  .footer__navigation {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__navigation {
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .nav__footer {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .footer__logo {
+    margin-bottom: $p3;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav__footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .nav__link {
+    margin-bottom: $p1;
+  }
+}

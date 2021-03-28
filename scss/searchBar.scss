@@ -1,0 +1,99 @@
+@import 'vars';
+@import 'mixin';
+
+
+#search-menu {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  top: -100vh;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+  z-index: 9999;
+  background: rgba(0, 153, 255, 0.9);;
+  opacity: 0;
+  visibility: hidden;
+  transition: 500ms ease all;
+}
+#search-menu.toggled {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+#search-menu .wrapper {
+  position: relative;
+  margin: 25em auto 0 auto;
+  padding: 0 2em;
+}
+#search-menu .wrapper input {
+  width: 100%;
+  padding: 0 0 0.125em 0;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #bfbfbf;
+  font-size: 48px;
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+#search-menu .wrapper input:focus {
+  outline: none;
+}
+#search-menu .wrapper button {
+  position: absolute;
+  display: block;
+  padding: 25px 70px;
+  top: 5em;
+  background: $blue;
+  border: 0px;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 21px;
+  transition: 500ms ease all;
+  cursor: pointer;
+}
+#search-menu .wrapper button:hover {
+  color: #fff;
+}
+#search-menu .wrapper button:focus {
+  outline: none;
+}
+
+#search-icon {
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  transition: 500ms ease all;
+  background: $lightBlue;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 $blue;
+  }
+  70% {
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+#search-icon:hover {
+  animation: pulse 1s infinite;
+}
+
+@media (max-width: 1028px) {
+  .search-menu {
+    display: none;
+  }
+
+  #search-icon {
+    display: none;
+  }
+}

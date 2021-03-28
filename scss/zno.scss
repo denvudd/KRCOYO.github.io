@@ -1,0 +1,488 @@
+@import 'vars';
+@import 'mixin';
+
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: $black;
+  line-height: 1.6;
+  font-weight: bold;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+
+
+*::selection {
+  background: #FF8A00;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0%;
+}
+
+p {
+  margin: 0%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.blueWord {
+  color: $blue;
+}
+
+.section__text-list {
+  list-style-type: disc;
+  @include mont18Regular();
+}
+
+.section__header {
+  padding-top: $p3;
+  text-align: center;
+}
+
+.section__title {
+  h1 {
+    @include mont32Semi();
+  }
+}
+
+.section__suptitle {
+  max-width: 795px;
+  margin: 0 auto;
+
+  h5 {
+    @include mont18Regular();
+  }
+}
+
+.section__text {
+  padding-top: $p1;
+
+  p {
+    @include mont18Regular();
+  }
+}
+
+.viewMore__button {
+  display: flex;
+  justify-content: flex-start;
+
+  a {
+    @include mont18Semi();
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $blue;
+      transition: width .3s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section__intro {
+  padding-top: $p2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 790px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro__title {
+  padding-top: 15px;
+  max-width: 650px;
+
+  h1 {
+    @include mont36Extra();
+  }
+}
+
+.intro__suptitle {
+  padding-top: $p1;
+
+  h4 {
+    @include mont18Regular();
+  }
+}
+
+.intro__line {
+  padding-top: $p1;
+}
+
+.line {
+  text-align: center;
+  width: 125px;
+  height: 1px;
+  background: $black;
+}
+
+.intro__button {
+  padding-top: $p2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    @include button1Normal();
+    transition: 0.3s ease;
+
+    &:hover {
+      @include button1Hover();
+    }
+  }
+}
+
+/* HEADER */
+
+@import 'header';
+
+/* TASKS */
+
+@import 'tasks';
+
+.tasks__wrapper {
+  padding-top: $p5;
+}
+
+/* SECTION 1 */
+
+.section1 {
+  padding-top: $p6;
+}
+
+.graphic__wrapper {
+  padding-top: $p5;
+}
+
+.graphic__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.graphic__item {
+  width: 300px;
+  height: 300px;
+  @include glass();
+  text-align: center;
+  margin-right: $p5;
+  margin-left: $p5;
+  margin-bottom: $p5;
+
+  &:nth-child(3) {
+    .graphic__date {
+      padding-top: 15px;
+    }
+  }
+}
+
+.graphic__icon {
+  padding-top: $p2;
+  padding-bottom: $p1;
+
+  object {
+    width: 74px;
+    height: 74px;
+  }
+}
+
+.graphic__title {
+  @include mont24Semi();
+}
+
+.graphic__date {
+  padding-top: $p2;
+  font-weight: normal;
+  font-size: 21px;
+}
+
+/* SECTION 2 */
+
+.section2 {
+  padding-top: $p4;
+}
+
+.exams__wrapper {
+  padding-top: $p3;
+}
+
+.exams__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.exams__item {
+  text-align: center;
+  margin: $p3 100px;
+  max-width: 385px;
+
+  &__title {
+    padding-top: $p2;
+    @include mont24Semi();
+    max-width: 295px;
+    margin: 0 auto;
+  }
+
+  &__suptitle {
+    padding-top: $p1;
+    max-width: 320px;
+    @include mont14Regular();
+  }
+}
+
+/* SECTION 3 */
+
+.section3 {
+  padding-top: $p6;
+}
+
+.features__wrapper {
+  padding-top: $p3;
+}
+
+.features__item {
+  padding-bottom: $p3;
+}
+
+.features__item__title {
+  @include mont21Semi();
+}
+
+/* SECTION 4 */
+
+.exams-ul {}
+
+.exams-li {
+  list-style-type: none;
+  @include mont18Regular();
+
+  &::before {
+    content: "\2713";
+    color: #00AB5E;
+    margin-right: 10px;
+  }
+}
+
+/* SECTION 5 */
+
+.section5 {
+  padding-top: $p1;
+  padding-bottom: $p6;
+}
+
+.links__wrapper {
+  padding-top: $p1;
+}
+
+@import 'links';
+
+.questions__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $p1;
+
+  a {
+    @include button1Normal();
+    padding: 18px 54px;
+    transition: 0.3s ease;
+
+    &:hover {
+      @include button1Hover();
+    }
+  }
+}
+
+/* SCROLL TO TOP/DOWN BUTTON */
+
+@import 'updownbtn';
+
+
+/* FOOTER */
+
+@import 'footer';
+
+@media (max-width: 1366px) {
+  .features__item {
+    padding-left: $p1;
+    padding-right: $p1;
+  }
+
+  .section__text {
+    padding-left: $p1;
+    padding-right: $p1;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .section3 {
+    padding-top: $p4;
+  }
+
+  .exams__item {
+    margin: 49px 60px;
+  }
+}
+
+@media (max-width: 1028px) {
+  .exams__item {
+    margin: 49px 30px;
+
+    &__title {
+      font-size: 21px;
+    }
+  }
+
+  .intro__suptitle {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .exams__inner {
+    flex-direction: column;
+  }
+
+  .exams__item {
+    margin: 30px auto;
+
+    &__title {
+      font-size: 18px;
+    }
+  }
+
+  .graphic__item {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  .exams__item_icon {
+    object {
+      width: 155px;
+    }
+  }
+
+  .section__intro {
+    width: 533px;
+  }
+}
+
+@media (max-width: 533px) {
+  .section__intro {
+    width: auto;
+  }
+
+  .section__header {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section__title {
+    padding-bottom: 15px;
+
+    h1 {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+  }
+
+  .intro__title {
+    h1 {
+      font-size: 28px;
+      line-height: 1.4;
+    }
+  }
+
+  .intro__suptitle {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .graphic__wrapper {
+    padding-top: $p3;
+  }
+
+  .graphic__item {
+    width: 100%;
+    margin-bottom: $p3;
+  }
+
+  .features__item__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .graphic__title {
+    font-size: 21px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .graphic__date {
+    padding-top: 15px;
+  }
+
+  .section__title {
+    padding-bottom: 15px;
+
+    h1 {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+  }
+
+  .section__suptitle {
+    h5 {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+}
+
+@media (max-width: 350px) {
+  .block-diagram {
+    width: 320px;
+  }
+}
+
+@import 'mobileMenu';

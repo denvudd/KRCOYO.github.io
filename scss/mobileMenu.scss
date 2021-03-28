@@ -1,0 +1,234 @@
+@import 'vars';
+@import 'mixin';
+
+.burger-menu {
+  display: none;
+}
+
+
+.burger-menu__button {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 6px;
+  z-index: 10000;
+  width: 60px;
+  height: 60px;
+
+  transition: 0.5s;
+}
+
+
+.burger-menu__active .burger-menu__button,
+.burger-menu__active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu__active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+  background-color: #ffffff;
+
+  transition: .2s;
+}
+
+.burger-menu__active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background-color: #ffffff;
+  transition: .2s;
+}
+
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 8px;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::before {
+  content: '';
+  top: -8px;
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: 8px;
+}
+
+.burger-menu__nav {
+  padding-top: $p2;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  background-color: $blue;
+  overflow-y: auto;
+  right: -100%;
+  width: 60vw;
+  text-align: start;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+
+  transition: 0.5s;
+
+  li {
+    list-style-type: none;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-inline-start: 15px;
+    padding-top: 10px;
+
+    li {
+      @include mont21Semi();
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.form__burger {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+
+  input {
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    border: 0;
+    outline: 0;
+    @include mont18Regular();
+    padding: 0px 5px 0 5px;
+    border-radius: 5px;
+    &::placeholder {
+      color: $lightGray;
+    }
+  }
+
+  button {
+    width: 90px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 5px 5px 5px 5px;
+    border: 0;
+    outline: 0;
+  }
+}
+
+
+
+
+.burger-menu__active .burger-menu__nav {
+  right: 0;
+}
+
+.burger__link {
+  @include mont32Semi();
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.burger__sublink {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.burger-menu__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.burger-menu__active .burger-menu__overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+@media (max-width: 1024px) {
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .burger-menu__nav {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .burger-menu__button {
+    top: 22px;
+  }
+
+  .burger-menu__nav {
+    width: 67vw;
+  }
+
+  .burger__link {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 533px) {
+  .burger-menu__nav {
+    width: 70vw;
+  }
+
+  .burger__link {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .burger-menu__overlay {
+    width: 110vw;
+  }
+
+  .burger-menu__nav {
+    width: 90vw;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .burger-menu__nav {
+    width: 75vw;
+  }
+
+  .burger__link {
+    font-size: 24px;
+  }
+
+  .burger-menu__overlay {
+    width: 110vw;
+  }
+}

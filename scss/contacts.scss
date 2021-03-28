@@ -1,0 +1,342 @@
+@import 'vars';
+@import 'mixin';
+
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: $black;
+  line-height: 1.6;
+  font-weight: bold;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+
+
+*::selection {
+  background: #FF8A00;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0%;
+}
+
+p {
+  margin: 0%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.blueWord {
+  color: $blue;
+}
+
+.section__text-list {
+  list-style-type: disc;
+  @include mont18Regular();
+}
+
+.section__header {
+  padding-top: $p3;
+  text-align: center;
+}
+
+.section__title {
+  h1 {
+    @include mont32Semi();
+  }
+}
+
+.section__suptitle {
+  max-width: 795px;
+  margin: 0 auto;
+
+  h5 {
+    @include mont18Regular();
+  }
+}
+
+.section__text {
+  padding-top: $p1;
+
+  p {
+    @include mont18Regular();
+  }
+}
+
+.viewMore__button {
+  display: flex;
+  justify-content: flex-start;
+
+  a {
+    @include mont18Semi();
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $blue;
+      transition: width .3s;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* HEADER */
+
+@import 'header';
+
+
+/* SECTION WARNING */
+
+.section-warning {
+  padding-top: $p6;
+}
+
+.section-warning__inner {
+  background: rgba(255, 0, 0, 0.5);
+  text-align: center;
+  padding: 25px 120px;
+}
+
+.warning__text {
+  color: #ffffff;
+
+  p {
+    @include mont14Regular();
+  }
+}
+
+/* SECTION 1 */
+
+.section1 {
+  padding-top: $p3;
+}
+
+.contacts-people__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contacts-people__item {
+  text-align: center;
+  margin: $p1 $p1;
+  max-width: 285px;
+}
+
+.contacts__prof {
+  padding-top: 10px;
+  max-width: 285px;
+
+  h5 {
+    @include mont14Medium();
+  }
+}
+
+.contacts__name {
+  padding-top: 15px;
+  width: 255px;
+  margin: 0 auto;
+  max-width: 285px;
+
+  h2 {
+    @include mont18Semi();
+  }
+}
+
+.contacts__phone {
+  padding-top: 15px;
+  max-width: 285px;
+
+  p {
+    @include mont18Regular();
+  }
+}
+
+.contacts__email {
+  padding-top: 15px;
+  max-width: 285px;
+
+  p {
+    @include mont18Regular();
+  }
+}
+
+/* SECTION 2 */
+
+.section2 {
+  padding-top: $p1;
+}
+
+/* SECTION 3 */
+
+.section3 {
+  padding-top: $p2;
+}
+
+.reglam__phone {
+  padding-top: $p2;
+  text-align: center;
+
+  p {
+    @include mont21Semi();
+  }
+}
+
+.reglam__block__title {
+  text-align: center;
+  @include mont24Bold();
+}
+
+.reglam__blocks {
+  padding-top: $p2;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.reglam__block {
+  margin: 0 $p2;
+}
+
+/* SECTION 4 */
+
+.section4 {
+  padding-top: $p5;
+  padding-bottom: $p6;
+}
+
+.map__button {
+  .viewMore__button {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.map__wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: $p2;
+}
+
+/* SCROLL TO TOP/DOWN BUTTON */
+
+@import 'updownbtn';
+
+
+/* FOOTER */
+
+@import 'footer';
+
+@media (max-width: 1366px) {
+  .section__text {
+    padding-left: $p1;
+    padding-right: $p1;
+  }
+}
+
+@media (max-width: 1280px) {
+  .map__wrapper {
+    iframe {
+      width: 970px;
+    }
+  }
+}
+
+@media (max-width: 1028px) {
+  .section-warning__inner {
+    padding: 25px 20px;
+  }
+
+  .section__header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .map__wrapper {
+    iframe {
+      width: 720px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .map__wrapper {
+    iframe {
+      width: 470px;
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 533px) {
+  .map__wrapper {
+    iframe {
+      width: 430px;
+      height: 390px;
+    }
+  }
+
+  .reglam__block {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__title {
+    padding-bottom: 10px;
+
+    h1 {
+      line-height: 1.6;
+    }
+  }
+
+  .map__wrapper {
+    iframe {
+      width: 310px;
+      height: 300px;
+    }
+  }
+
+  .reglam__blocks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reglam__block {
+    margin-bottom: $p1;
+  }
+}
+
+@media (max-width: 350px) {}
+
+@import 'mobileMenu';

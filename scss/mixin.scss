@@ -1,0 +1,284 @@
+@import 'vars';
+
+// BUTTONS //
+
+@mixin button1Normal () {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $black;
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  background: rgba(20, 33, 255, 0.4);
+  border-radius: 8px;
+}
+
+@mixin button1Hover () {
+  background: $blue;
+  opacity: 1;
+  color: #ffffff;
+}
+
+@mixin button1Pressed () {
+  background: #6C6C6C;
+  opacity: 1;
+  color: #ffffff;
+}
+
+@mixin button1Disabled () {
+  background: #2E2E2E;
+  opacity: 1;
+  color: #ffffff;
+}
+
+@mixin button2Normal () {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 37px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  background: #fd4141;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+@mixin button2Hover () {
+  background: $red;
+}
+
+@mixin button2Pressed () {
+  background: #6C6C6C;
+}
+
+@mixin button2Disabled () {
+  background: #2E2E2E;
+}
+
+@mixin button3Normal () {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 37px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  background: #006EFF;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 8px;
+
+}
+
+@mixin button3Hover () {
+  background: $blue;
+}
+
+@mixin button3Pressed () {
+  background: #6C6C6C;
+}
+
+@mixin button3Disabled () {
+  background: #2E2E2E;
+}
+
+@mixin button4Normal () {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 42px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $black;
+  text-decoration: none;
+
+  background: linear-gradient(130deg, #FF8A00 30%, rgba(26, 255, 0, 0) 70%);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+@mixin button4Hover () {
+  background: #FF8A00;
+}
+
+@mixin button4Pressed () {
+  background: #6C6C6C;
+}
+
+@mixin button4Disabled () {
+  background: #6C6C6C;
+  ;
+}
+
+// TYPOGRAPHY //
+
+@mixin mont48Extra () {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+@mixin mont48Semi () {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+@mixin mont36Extra () {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 64px;
+}
+
+@mixin mont36Semi () {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 64px;
+}
+
+@mixin mont34Bold () {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 64px;
+}
+
+@mixin mont32Bold () {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 64px;
+}
+
+@mixin mont32Semi () {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 64px;
+}
+
+@mixin mont24Extra () {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@mixin mont24Bold () {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@mixin mont24Semi () {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+@mixin mont24Medium () {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@mixin mont24Regular () {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@mixin mont21Extra () {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 34px;
+}
+
+@mixin mont21Bold () {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 34px;
+}
+
+@mixin mont21Semi () {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 34px;
+}
+
+@mixin mont18Bold () {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@mixin mont18Semi () {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@mixin mont18Regular () {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+@mixin mont16Medium () {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin mont14Semi () {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin mont14Medium () {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin mont14Regular () {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
